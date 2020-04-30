@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" type="text/css" href="core.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="core.js"></script>
 </head>
 
 <body>
@@ -15,10 +14,10 @@
 
 <div class ="navbar">
 
-    <a href="#" class="previous">&#8592;</a>
-    <a href="#" class="next">&#8594;</a>
-    <input type="text" name="" class="search-txt" placeholder="fivem:\\d.drpnet.info"/>
-    <a href="#" class="exit">&#9932;</a>
+    <button onclick="goBack()" class="previous">&#8592;</button>
+    <button onclick="goForward()" class="next">&#8594;</button>
+    <p class="link">drpnet://homepage.fivem</p>
+
 </div>
 
 <div class="container">
@@ -52,15 +51,28 @@
             <p>Travel &<br>Transport</p>
         </a>
     </div>
-    <div class = "content"> 
-
+    <div class = "content-sponsor"> 
+        <a class= "frame-sponsored dealership">
+            <h1>SPONSORED</h1>
+            <div class="dealership"></div>
+        </a>
+        <a class = "frame-sponsored">
+            <h1>SPONSORED</h1>
+            <div class ="appartments"></div>
+        </a>
+        <a class="frame-sponsored">
+            <h1>SPONSORED</h1>
+            <div class ="magazin"></div>
+        </a>
     </div>
-
-    
-
-
-
-
+    <div class = "content">
+        <a class = "ad 1" href="#"></a>
+        <a class = "ad 2" href="#"></a>
+        <a class = "ad 3" href="#"></a>
+        <a class = "ad 4" href="#"></a>
+        <a class = "ad 5" href="#"></a>
+        <a class = "ad 6" href="#"></a>
+    </div>
 </div> 
 
 

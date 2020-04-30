@@ -4,16 +4,17 @@ body {
   background: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+    overflow: hidden;
 }
 
 .navbar {
   width: 100%;
   background: radial-gradient(
-    rgb(194, 191, 191),
-    rgb(173, 173, 173),
-    rgb(158, 158, 158),
-    rgb(116, 116, 116),
-    rgb(105, 104, 104)
+    rgb(145, 145, 145),
+    rgb(139, 139, 139),
+    rgb(130, 130, 130),
+    rgb(124, 124, 124),
+    rgb(119, 119, 119)
   );
   height: 6.7%;
   position: absolute;
@@ -21,42 +22,6 @@ body {
   box-shadow: 0px 6px rgba(0, 0, 0, 0.219);
   z-index: 30;
 }
-
-.search-txt {
-  top: 20%;
-  position: relative;
-  margin: auto;
-  left: 27%;
-  width: 40%;
-  border: 2px solid black;
-  font-size: 25px;
-  border-radius: 5%;
-}
-
-.search-txt::placeholder {
-  color: rgb(0, 0, 0);
-  background-color: rgb(240, 240, 240);
-  opacity: 1;
-  left: 20px;
-  position: relative;
-}
-.search-txt::-webkit-.search-txt-placeholder {
-  /* WebKit browsers */
-  padding-left: 30px;
-}
-.search-txt:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  padding-left: 30px;
-}
-.search-txt::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  padding-left: 30px;
-}
-.search-txt:-ms-.search-txt-placeholder {
-  /* Internet Explorer 10+ */
-  padding-left: 30px;
-}
-
 a {
   text-decoration: none;
   display: inline-block;
@@ -101,14 +66,24 @@ a:visited {
   border: 2px black solid;
   border-radius: 50%;
 }
-
+.link {
+  position: relative;
+  color: rgb(70, 70, 70);
+  z-index: 23;
+  font-size: 20px;
+  top: -55%;
+  left: 43.2%;
+  width: 250px;
+  text-decoration: underline;
+}
 .exit {
   background-color: rgb(129, 129, 129);
   font-size: 20px;
-  top: 15%;
+  top: 0%;
   left: 50%;
   position: relative;
   border: 2px solid black;
+  display: inline-block;
 }
 
 .container {
@@ -282,12 +257,77 @@ p {
   width: 50px;
   padding-left: 10px;
 }
-.content {
-  top: 2%;
+.content-sponsor {
+  top: 0.5%;
   margin: auto;
-  width: 80%;
-  /*background-color: lawngreen;*/
+  width: 60%;
   position: relative;
-  height: 55%;
+  height: 25%;
   overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  left: 20%;
 }
+.frame-sponsored{
+  background-color:  rgb(2, 111, 173);
+  position: relative;
+  width: 330px;
+  height: 190px;
+  color: white;
+  font-size: 9px;
+  border-top: 5px rgb(221, 193, 31) solid;
+  margin: auto;
+  margin-right: 15px;
+  letter-spacing:2px;
+
+}
+.frame-sponsored:hover{
+  border-top: 5px rgb(4, 75, 156) solid;
+}
+.frame-sponsored .dealership{
+  position: relative;
+  background-color: #fc0000;
+  width: 315px;
+  height: 138px;
+  margin:auto;
+}
+.frame-sponsored .appartments{
+  position: relative;
+  background-color: #fc0000;
+  width: 315px;
+  height: 138px;
+  margin:auto;
+}
+.frame-sponsored .magazin{
+  position: relative;
+  background-color: #fc0000;
+  width: 315px;
+  height: 138px;
+  margin:auto;
+}
+.content{
+  top: -1%;
+  margin: auto;
+  width: 60%;
+  position: relative;
+  height: 33.5%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ad{
+  left: 9px;
+  background-color:  rgb(2, 111, 173);
+  position: relative;
+  width: 310px;
+  height: 140px;
+  color: white;
+  font-size: 13px;
+  display: inline-block;
+  margin-right:3%;
+  margin-bottom: 1.5%;
+}
+.ad:hover{
+  background-color: rgb(4, 60, 92);
+}
+
