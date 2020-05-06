@@ -25,6 +25,9 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
+  text-decoration: none; 
+  background-color: none;
+  color:white;
 }
 
 .navbar a:hover {
@@ -45,6 +48,7 @@ a:visited {
     rgb(190, 188, 188),
     rgb(167, 166, 166)
   );
+
 }
 
 .previous {
@@ -281,6 +285,7 @@ p {
   text-align: center;
   display: inline-block;
   left: 20%;
+  
 }
 .frame-sponsored{
   background-color:  rgb(2, 111, 173);
@@ -293,16 +298,17 @@ p {
   margin: auto;
   margin-right: 15px;
   letter-spacing:2px;
+  text-decoration: none;
 
 }
 .frame-sponsored:hover{
   border-top: 5px rgb(4, 75, 156) solid;
+  transition: all 100ms linear;
 }
 .frame-sponsored .dealership{
   position: relative;
   background-image: url('img/ads/OnEarth.png');
   background-position: center;
-
   width: 315px;
   height: 138px;
   margin:auto;
@@ -323,6 +329,12 @@ p {
   width: 315px;
   height: 138px;
   margin:auto;
+  text-decoration: none; 
+  color:white;
+}
+.frame-sponsored .banksp h1{
+  color: white;
+  text-decoration: none; 
 }
 .dividercontent{
   top: -4%;
@@ -362,7 +374,7 @@ p {
   top: 2%;
 }
 .ad:hover{
-
+  transition: all 100ms linear;
   background-repeat: no-repeat;
   border: 2px solid rgb(6, 80, 190);
 }
