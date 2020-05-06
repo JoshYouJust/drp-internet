@@ -6,11 +6,11 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+
 </head>
 
-<body class="everything" onload="load()">
 
-    <script src="../core.js"></script>
+<body class="everything" onload="load()">
 
 <div class ="navbar">
     <div class ="wrapper">
@@ -28,16 +28,24 @@
 <div class="page-container">
     <div class="logo-container">
         <img src="img/logo.png" class="logo">
-        <p class = "auth-details" style="left:90%;position: relative;">Authenticated as:</p>
+        <h3 id='log' style="display: none;">Logged in as:</h3>
+        <p id = 'logp'style="display: none;">Balance:</p>
     </div>
-
     <div class = "fadingshit"></div>
-    <h1>Welcome to <span style ="color:green">Flecca</span> Bank!</h1>
-
+    <div class ="replace" id="replace">
+        <h1 class="wlcm">Welcome to <span style ="color:green">Flecca</span> Bank!</h1>
+        <button onclick="replace('replace','replace1');display('log','logp');" class = "auth btn">Authenticate</button>
+    </div>
+    <div id="replace1" class ="replace" style="display: block;">
+         <h1>Choose a service</h1>
+         <button class ="deposit btn">Deposit</button>
+         <button class ="withdraw btn">Withdraw</button>
+         <button class ="logs btn">Transaction logs</button>
+    </div>
 
 </div>
 
 
 <script src="../core.js"></script>
-<script src="./flecca.js"></script>
+<script src='./main.js'></script>
 </body>
