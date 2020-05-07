@@ -29,18 +29,30 @@
     <div class="logo-container">
         <img src="img/logo.png" class="logo">
         <h3 id='log' style="display: none;">Logged in as:</h3>
-        <p id = 'logp'style="display: none;">Balance:</p>
+        <p id = 'logp'style="display: none;">Account balance:</p>
+        <p id='logp2'style="display:none;">Cash:</p>
     </div>
     <div class = "fadingshit"></div>
+    <button id="back" onclick="replace('replace2','replace1');hide('back')" style="display: none;">&#171;Back</button>
     <div class ="replace" id="replace">
         <h1 class="wlcm">Welcome to <span style ="color:green">Flecca</span> Bank!</h1>
-        <button onclick="replace('replace','replace1');display('log','logp');" class = "auth btn">Authenticate</button>
+        <button onclick="replace('replace','replace1');display('log','logp','logp2');" class = "auth btn">Authenticate</button>
     </div>
-    <div id="replace1" class ="replace" style="display: block;">
-         <h1>Choose a service</h1>
-         <button class ="deposit btn">Deposit</button>
-         <button class ="withdraw btn">Withdraw</button>
-         <button class ="logs btn">Transaction logs</button>
+    <div id="replace1" class ="replace" style="display: none;">
+        <h1>Choose a service</h1>
+        <button class ="deposit btn" onclick="replace('replace1','replace2');display('back');">Deposit</button>
+        <button class ="withdraw btn">Withdraw</button>
+        <button class ="logs btn">Transaction logs</button>
+    </div>
+    <div id="replace2" class="replace" style="display:none;">
+        <h1>Select an amount</h1>
+        <div class= "columns">
+            <button class="dep1 left btn">250</button>
+            <button class="dep2 left btn">1000</button>
+            <button class="dep3 left btn">5000</button>
+            <button class="depmax right btn">Deposit all</button>
+            <button class="depcustom right btn">Custom amount</button>
+        </div>
     </div>
 
 </div>
