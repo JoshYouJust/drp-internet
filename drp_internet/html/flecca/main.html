@@ -41,7 +41,7 @@
     <div id="replace1" class ="replace" style="display: none;">
         <h1>Choose a service</h1>
         <button class ="deposit btn" onclick="replace('replace1','replace2');display('back');">Deposit</button>
-        <button class ="withdraw btn">Withdraw</button>
+        <button class ="withdraw btn" onclick="replace('replace1','replacewithdraw')">Withdraw</button>
         <button class ="logs btn">Transaction logs</button>
     </div>
     <div id="replace2" class="replace" style="display:none;">
@@ -53,6 +53,14 @@
             <button class="depmax right btn">Deposit all</button>
             <button class="depcustom right btn">Custom amount</button>
         </div>
+    </div>
+    <div id="replacewithdraw" class = "replace" style="display:none;">
+        <h1>Introduce amount</h1>
+        <form>
+            <input class ='input'type="number" id="withdrawamount"> 
+        </form>
+
+    
     </div>
 
 </div>
