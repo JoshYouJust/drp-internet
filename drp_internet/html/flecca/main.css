@@ -210,10 +210,6 @@ h1{
   margin-bottom: 30px;
   margin: 0 auto;
 }
-.withdraw{
-  top:10%;
-  margin: auto;
-}
 .logs{
   top:20%;
   margin: auto;
@@ -229,12 +225,7 @@ h1{
   color: black;
   top:-2%;
 }
-#logp2{
-  left:80%;
-  position: relative;
-  color: black;
-  top:-4%;
-}
+
 .columns{
   position: relative;
   margin: auto;
@@ -249,7 +240,10 @@ h1{
 .right{
   margin-bottom: 5%;
 }
-
+.form {
+  background-color: aquamarine;
+  height: 40%;
+}
 .input{
   width: 40%;
   position: relative;
@@ -262,9 +256,29 @@ h1{
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: textfield;
+  margin-bottom: 20px;
 }
 .input:focus{
   border-color: rgba(0, 134, 0, 0.699);
 }
-
+.input1{
+  margin: 0;
+  width: 40%;
+  position: relative;
+  left:30%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 119, 0, 0.363);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+.input1:focus{
+  border-color: rgba(0, 134, 0, 0.699);
+}
+.confirm{
+  margin: 50px auto;
+}
 
