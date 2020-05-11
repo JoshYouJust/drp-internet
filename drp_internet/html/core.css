@@ -378,4 +378,23 @@ p {
   background-repeat: no-repeat;
   border: 2px solid rgb(6, 80, 190);
 }
-
+.unavailable{
+  margin: 0;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  background-color:rgba(0, 0, 0, 0.411);
+  bottom:8px;
+  width: 50%;
+  left:-2px;
+  height: 30px;
+}
+.unavailable-sp{
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.603);
+  margin: 0;
+  bottom: 10px;
+  left:10px;
+}
