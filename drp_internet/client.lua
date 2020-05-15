@@ -41,3 +41,4 @@ function NuiStatus(bool)
         status = bool,
     })
 end
+
